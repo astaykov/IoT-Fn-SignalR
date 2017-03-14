@@ -1,0 +1,9 @@
+﻿{
+  "frameworks": {
+    "net46":{
+      "dependencies": {
+        "Microsoft.AspNet.SignalR.Client": "2.2.1"
+      }
+    }
+  }
+}

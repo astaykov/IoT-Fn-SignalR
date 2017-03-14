@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT-Fn-SignalR", "IoT-Fn-Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRConsoleClient", "SignalRConsoleClient\SignalRConsoleClient.csproj", "{FA51B025-A3EE-4B27-A161-523F10EEAF32}"
 EndProject
+Project("{33AD0EE8-D99B-4E14-8CD9-3F56ABEF97A2}") = "fa-demos", "fa-demos\fa-demos.funproj", "{2F4D8474-DFE6-4ADE-849E-A9E79E644C81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FA51B025-A3EE-4B27-A161-523F10EEAF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA51B025-A3EE-4B27-A161-523F10EEAF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA51B025-A3EE-4B27-A161-523F10EEAF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4D8474-DFE6-4ADE-849E-A9E79E644C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4D8474-DFE6-4ADE-849E-A9E79E644C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4D8474-DFE6-4ADE-849E-A9E79E644C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4D8474-DFE6-4ADE-849E-A9E79E644C81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
