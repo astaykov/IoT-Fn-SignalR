@@ -155,3 +155,10 @@ public class RelayState
     public bool RelayTwoState { get; set; }
 }
 ```
+
+## Confusion disclaimer
+
+> I am pretty sure you are already confused about the double (or triple) meaning of the word **hub**.
+> Indeed there are a lot of **Hubs** and please try to not confuse one with the other.
+> There is IoT Hub (an Azure Service), there is Event Hub (another Azure Service) and there is 
+> SignalR Hub (programm code which lives in our web app).
