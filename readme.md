@@ -19,7 +19,7 @@ All we have is
 * Web App with SignalR hub
 * A common POCO (plain old CLR object)
 
-
+![simple diagram](https://github.com/astaykov/IoT-Fn-SignalR/blob/master/diagram.png?raw=true "Data flow diagram")
 
 ## Azure IoT Hub tricks
 In order to have an Azure Function to listen to IoT Hub, we need to get the Event Hub compatible endpoint for our IoT Hub.
