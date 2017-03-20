@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 public static async void Run(string iotMessage, TraceWriter log)
 {
     log.Info($"C# Event Hub trigger function processed a message: {iotMessage}");
-    var srHubConnection = new HubConnection("http://iot-fn-signalr.azurewebsites.net/");
+    var srHubConnection = new HubConnection("https://iot-fn-signalr.azurewebsites.net/");
     IHubProxy srHubProxy = srHubConnection.CreateHubProxy("IotHub");
     await srHubConnection.Start();
     try

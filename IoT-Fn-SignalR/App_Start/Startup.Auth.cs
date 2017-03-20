@@ -34,6 +34,8 @@ namespace IoT_Fn_SignalR
 
             // Configure OpenID Connect middleware for each policy
             app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SignUpInPolicyId));
+
+            
         }
 
         // Used for avoiding yellow-screen-of-death
