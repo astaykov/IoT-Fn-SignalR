@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace IoT_Fn_SignalR.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
