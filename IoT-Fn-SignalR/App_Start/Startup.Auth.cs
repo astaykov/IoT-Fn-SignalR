@@ -1,6 +1,7 @@
 ﻿using Microsoft.IdentityModel.Protocols;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.ActiveDirectory;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Notifications;
 using Microsoft.Owin.Security.OpenIdConnect;
@@ -35,7 +36,17 @@ namespace IoT_Fn_SignalR
             // Configure OpenID Connect middleware for each policy
             app.UseOpenIdConnectAuthentication(CreateOptionsFromPolicy(SignUpInPolicyId));
 
-            
+            app.UseWindowsAzureActiveDirectoryBearerAuthentication(
+               new WindowsAzureActiveDirectoryBearerAuthenticationOptions
+               {
+                   
+                   Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
+                   // This piece is optional - it is used for displaying the user's name in the navigation bar.
+                   TokenValidationParameters = new System.IdentityModel.Tokens.TokenValidationParameters
+                   {
+                       ValidAudience = "54a4b695-5221-4bb1-936f-4c6dcf53c7d1"
+                   },
+               });
         }
 
         // Used for avoiding yellow-screen-of-death

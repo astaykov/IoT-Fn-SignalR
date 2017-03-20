@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace IoT_Fn_SignalR.Hubs
 {
-    [HeadersAuth]
+    [Authorize]
     public class IotHub : Hub
     {
         public void Hello()
@@ -62,10 +62,10 @@ namespace IoT_Fn_SignalR.Hubs
                     }
                 }
 
-                if (!string.IsNullOrWhiteSpace(request.Headers["Authorization"]))
-                {
-                    authResult = true;
-                }
+                //if (!string.IsNullOrWhiteSpace(request.Headers["Authorization"]))
+                //{
+                //    authResult = true;
+                //}
             }
             return authResult;
 
