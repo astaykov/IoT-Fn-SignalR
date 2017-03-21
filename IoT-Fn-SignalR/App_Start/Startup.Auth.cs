@@ -44,7 +44,7 @@ namespace IoT_Fn_SignalR
                    // This piece is optional - it is used for displaying the user's name in the navigation bar.
                    TokenValidationParameters = new System.IdentityModel.Tokens.TokenValidationParameters
                    {
-                       ValidAudience = "54a4b695-5221-4bb1-936f-4c6dcf53c7d1"
+                       ValidAudience = clientId
                    },
                });
         }
