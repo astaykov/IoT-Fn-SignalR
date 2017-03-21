@@ -23,10 +23,12 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@User.Identity.Name | @User.Identity.IsAuthenticated</li>
-                </ul>
+                 </ul>
+                @Html.Partial("_AuthPartial")
             </div>
         </div>
+        @User.Identity.Name | @User.Identity.IsAuthenticated
+        
     </div>
     <div class="container body-content">
         @RenderBody()

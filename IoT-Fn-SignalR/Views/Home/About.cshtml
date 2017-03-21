@@ -1,7 +1,16 @@
-﻿@{
+﻿@using System.Security.Claims
+@{
     ViewBag.Title = "About";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>Welcome @User.Identity.Name</p>
+<p>You have used @User.Identity.AuthenticationType authentication</p>
+<p>And these are your claims:</p>
+<ul>
+    @foreach(Claim c in ((ClaimsIdentity)User.Identity).Claims)
+    {
+        <li><strong>@c.Type</strong><br/>@c.Value</li>
+    }
+</ul>

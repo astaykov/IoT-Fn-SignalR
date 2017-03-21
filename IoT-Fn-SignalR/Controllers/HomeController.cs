@@ -6,7 +6,6 @@ using System.Web.Mvc;
 
 namespace IoT_Fn_SignalR.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -14,6 +13,7 @@ namespace IoT_Fn_SignalR.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -21,6 +21,7 @@ namespace IoT_Fn_SignalR.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
