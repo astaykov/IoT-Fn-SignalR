@@ -41,7 +41,6 @@ namespace IoT_Fn_SignalR
                {
                    
                    Tenant = ConfigurationManager.AppSettings["ida:Tenant"],
-                   // This piece is optional - it is used for displaying the user's name in the navigation bar.
                    TokenValidationParameters = new System.IdentityModel.Tokens.TokenValidationParameters
                    {
                        ValidAudience = clientId
